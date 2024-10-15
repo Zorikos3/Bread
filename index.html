@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πώς να φτιάξετε ψωμί</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Lighter background */
+            color: #333; /* Darker text for better contrast */
+            overflow-y: scroll;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 900px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(45deg, #ff6b6b, #ffcc33); /* Vibrant gradient */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+        }
+
+        main {
+            padding: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h2 {
+            color: #ff6b6b; /* Bright section headers */
+            font-size: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        p, ul {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #ffcc33;
+            border-radius: 0 0 15px 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Steps section */
+        .step {
+            margin: 20px 0;
+            padding: 25px;
+            background: #ffe6b3; /* Light background for steps */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .step:hover {
+            background-color: #ffd27f; /* Lighten on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #e0e0e0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ff6b6b;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff5050;
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button Styling for Interactive Elements */
+        .button {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff5050;
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Πώς να φτιάξετε ψωμί</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Υλικά</h2>
+                <img src="ing.png" alt="Υλικά για ψωμί">
+                <ul>
+                    <li>500 γρ. αλεύρι</li>
+                    <li>300 ml νερό</li>
+                    <li>10 γρ. αλάτι</li>
+                    <li>5 γρ. μαγιά</li>
+                </ul>
+            </section>
+            <div class="step">
+                <h2>Βήμα 1: Ανακάτεμα Υλικών</h2>
+                <p>Σε ένα μεγάλο μπολ, ανακατέψτε το αλεύρι, το αλάτι και τη μαγιά. Προσθέστε σταδιακά το νερό και ανακατέψτε μέχρι να δημιουργηθεί μια ομοιογενής ζύμη.</p>
+            </div>
+            <div class="step">
+                <h2>Βήμα 2: Ζύμωμα</h2>
+                <p>Μεταφέρετε τη ζύμη σε μια αλευρωμένη επιφάνεια και ζυμώστε για περίπου 10 λεπτά. Η ζύμη πρέπει να είναι λεία και ελαστική.</p>
+            </div>
+            <div class="step">
+                <h2>Βήμα 3: Φούσκωμα</h2>
+                <p>Τοποθετήστε τη ζύμη σε ένα ελαφρώς λαδωμένο μπολ, καλύψτε την με μια πετσέτα και αφήστε την να φουσκώσει σε ζεστό μέρος για 1 ώρα, μέχρι να διπλασιαστεί σε μέγεθος.</p>
+            </div>
+            <div class="step">
+                <h2>Βήμα 4: Προθέρμανση Φούρνου</h2>
+                <p>Προθερμάνετε τον φούρνο στους 220°C (428°F) για να εξασφαλίσετε ότι ο φούρνος είναι αρκετά ζεστός για να ψηθεί το ψωμί.</p>
+            </div>
+            <div class="step">
+                <h2>Βήμα 5: Ψήσιμο</h2>
+                <p>Ψήστε το ψωμί για 25-30 λεπτά, ή μέχρι να αποκτήσει χρυσό καφέ χρώμα. Για να ελέγξετε αν είναι έτοιμο, χτυπήστε το κάτω μέρος του ψωμιού· αν ακούγεται κενό, είναι έτοιμο.</p>
+            </div>
+        </main>
+        <footer>
+            <p>Καλή σας όρεξη!</p>
+        </footer>
+    </div>
+</body>
+</html>
